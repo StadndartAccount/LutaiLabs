@@ -2,6 +2,6 @@
 {
     interface IExtraAbility
     {
-
+        public void GetExtraAbilityInfo();
     }
 }

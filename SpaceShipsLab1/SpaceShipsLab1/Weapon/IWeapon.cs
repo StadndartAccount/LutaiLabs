@@ -2,5 +2,6 @@
 {
     interface IWeapon
     {
+        public void GetWeaponInfo();
     }
 }

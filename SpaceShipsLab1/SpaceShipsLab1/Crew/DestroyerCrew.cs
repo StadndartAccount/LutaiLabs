@@ -6,7 +6,7 @@ namespace SpaceShipsLab1.Crew
     {
         public void GetCrewMembers()
         {
-            Console.WriteLine("");
+            Console.WriteLine("number of destroyer crew members: 100");
         }
     }
 }

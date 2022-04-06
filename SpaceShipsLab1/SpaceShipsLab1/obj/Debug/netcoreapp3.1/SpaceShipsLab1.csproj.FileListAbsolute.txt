@@ -1,0 +1,14 @@
+C:\Users\Waffleka\Documents\GitHub\LutaiLabs\SpaceShipsLab1\SpaceShipsLab1\obj\Debug\netcoreapp3.1\SpaceShipsLab1.csproj.AssemblyReference.cache
+C:\Users\Waffleka\Documents\GitHub\LutaiLabs\SpaceShipsLab1\SpaceShipsLab1\obj\Debug\netcoreapp3.1\SpaceShipsLab1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Waffleka\Documents\GitHub\LutaiLabs\SpaceShipsLab1\SpaceShipsLab1\obj\Debug\netcoreapp3.1\SpaceShipsLab1.AssemblyInfoInputs.cache
+C:\Users\Waffleka\Documents\GitHub\LutaiLabs\SpaceShipsLab1\SpaceShipsLab1\obj\Debug\netcoreapp3.1\SpaceShipsLab1.AssemblyInfo.cs
+C:\Users\Waffleka\Documents\GitHub\LutaiLabs\SpaceShipsLab1\SpaceShipsLab1\obj\Debug\netcoreapp3.1\SpaceShipsLab1.csproj.CoreCompileInputs.cache
+C:\Users\Waffleka\Documents\GitHub\LutaiLabs\SpaceShipsLab1\SpaceShipsLab1\bin\Debug\netcoreapp3.1\SpaceShipsLab1.exe
+C:\Users\Waffleka\Documents\GitHub\LutaiLabs\SpaceShipsLab1\SpaceShipsLab1\bin\Debug\netcoreapp3.1\SpaceShipsLab1.deps.json
+C:\Users\Waffleka\Documents\GitHub\LutaiLabs\SpaceShipsLab1\SpaceShipsLab1\bin\Debug\netcoreapp3.1\SpaceShipsLab1.runtimeconfig.json
+C:\Users\Waffleka\Documents\GitHub\LutaiLabs\SpaceShipsLab1\SpaceShipsLab1\bin\Debug\netcoreapp3.1\SpaceShipsLab1.runtimeconfig.dev.json
+C:\Users\Waffleka\Documents\GitHub\LutaiLabs\SpaceShipsLab1\SpaceShipsLab1\bin\Debug\netcoreapp3.1\SpaceShipsLab1.dll
+C:\Users\Waffleka\Documents\GitHub\LutaiLabs\SpaceShipsLab1\SpaceShipsLab1\bin\Debug\netcoreapp3.1\SpaceShipsLab1.pdb
+C:\Users\Waffleka\Documents\GitHub\LutaiLabs\SpaceShipsLab1\SpaceShipsLab1\obj\Debug\netcoreapp3.1\SpaceShipsLab1.dll
+C:\Users\Waffleka\Documents\GitHub\LutaiLabs\SpaceShipsLab1\SpaceShipsLab1\obj\Debug\netcoreapp3.1\SpaceShipsLab1.pdb
+C:\Users\Waffleka\Documents\GitHub\LutaiLabs\SpaceShipsLab1\SpaceShipsLab1\obj\Debug\netcoreapp3.1\SpaceShipsLab1.genruntimeconfig.cache

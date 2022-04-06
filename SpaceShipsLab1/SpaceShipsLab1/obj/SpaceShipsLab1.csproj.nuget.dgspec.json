@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Danila\\source\\repos\\SpaceShipsLab1\\SpaceShipsLab1\\SpaceShipsLab1.csproj": {}
+    "C:\\Users\\Waffleka\\Documents\\GitHub\\LutaiLabs\\SpaceShipsLab1\\SpaceShipsLab1\\SpaceShipsLab1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Danila\\source\\repos\\SpaceShipsLab1\\SpaceShipsLab1\\SpaceShipsLab1.csproj": {
+    "C:\\Users\\Waffleka\\Documents\\GitHub\\LutaiLabs\\SpaceShipsLab1\\SpaceShipsLab1\\SpaceShipsLab1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Danila\\source\\repos\\SpaceShipsLab1\\SpaceShipsLab1\\SpaceShipsLab1.csproj",
+        "projectUniqueName": "C:\\Users\\Waffleka\\Documents\\GitHub\\LutaiLabs\\SpaceShipsLab1\\SpaceShipsLab1\\SpaceShipsLab1.csproj",
         "projectName": "SpaceShipsLab1",
-        "projectPath": "C:\\Users\\Danila\\source\\repos\\SpaceShipsLab1\\SpaceShipsLab1\\SpaceShipsLab1.csproj",
-        "packagesPath": "C:\\Users\\Danila\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Danila\\source\\repos\\SpaceShipsLab1\\SpaceShipsLab1\\obj\\",
+        "projectPath": "C:\\Users\\Waffleka\\Documents\\GitHub\\LutaiLabs\\SpaceShipsLab1\\SpaceShipsLab1\\SpaceShipsLab1.csproj",
+        "packagesPath": "C:\\Users\\Waffleka\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Waffleka\\Documents\\GitHub\\LutaiLabs\\SpaceShipsLab1\\SpaceShipsLab1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Danila\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Waffleka\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,6 +26,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -37,6 +38,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -52,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

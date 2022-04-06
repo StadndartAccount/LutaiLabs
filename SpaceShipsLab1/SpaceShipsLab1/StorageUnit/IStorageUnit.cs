@@ -2,5 +2,6 @@
 {
     interface IStorageUnit
     {
+        public void GetStorageUnitInfo();
     }
 }

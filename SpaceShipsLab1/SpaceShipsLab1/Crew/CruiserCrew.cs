@@ -1,10 +1,12 @@
-﻿namespace SpaceShipsLab1.Crew
+﻿using System;
+
+namespace SpaceShipsLab1.Crew
 {
     class CruiserCrew : ICrew
     {
         public void GetCrewMembers()
         {
-            throw new System.NotImplementedException();
+            Console.WriteLine("number of cruiser crew members: 140");
         }
     }
 }
