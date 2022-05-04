@@ -1,31 +1,152 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="SpaceShipsLab1.Crew.CorvetteCrew" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="8.5" Y="1.25" Width="1.5" />
+  <Class Name="SpaceShipsLab1.ExtraAbility.DamageBoost" BaseTypeListCollapsed="true">
+    <Position X="11.25" Y="6" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExtraAbility\DamageBoost.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SpaceShipsLab1.ExtraAbility.MovementAcceleration" BaseTypeListCollapsed="true">
+    <Position X="6.75" Y="6" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExtraAbility\MovementAcceleration.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SpaceShipsLab1.ExtraAbility.NoiseReduction" BaseTypeListCollapsed="true">
+    <Position X="9" Y="6" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExtraAbility\NoiseReduction.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SpaceShipsLab1.Weapon.LightWeightGun" BaseTypeListCollapsed="true">
+    <Position X="9" Y="4.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Weapon\LightWeightGun.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SpaceShipsLab1.Weapon.LongDistanceGun" BaseTypeListCollapsed="true">
+    <Position X="11.25" Y="4.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Weapon\LongDistanceGun.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SpaceShipsLab1.Weapon.RapidFiringGun" BaseTypeListCollapsed="true">
+    <Position X="6.75" Y="4.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Weapon\RapidFiringGun.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SpaceShipsLab1.Weapon.WeaponFactory">
+    <Position X="2.75" Y="4.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQgAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Weapon\WeaponFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceShipsLab1.StorageUnit.CorvetteStorageUnit" BaseTypeListCollapsed="true">
+    <Position X="6.75" Y="2.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>StorageUnit\CorvetteStorageUnit.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SpaceShipsLab1.StorageUnit.CruiserStorageUnit" BaseTypeListCollapsed="true">
+    <Position X="9" Y="2.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>StorageUnit\CruiserStorageUnit.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SpaceShipsLab1.StorageUnit.DestroyerStorageUnit" BaseTypeListCollapsed="true">
+    <Position X="11.25" Y="2.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>StorageUnit\DestroyerStorageUnit.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SpaceShipsLab1.StorageUnit.StorageUnitFactory">
+    <Position X="2.75" Y="2.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>StorageUnit\StorageUnitFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceShipsLab1.Crew.CorvetteCrew" BaseTypeListCollapsed="true">
+    <Position X="6.75" Y="0.75" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Crew\CorvetteCrew.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" Collapsed="true" />
+    <Lollipop Position="0.2" />
   </Class>
-  <Class Name="SpaceShipsLab1.Crew.CruiserCrew" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="10.25" Y="1.25" Width="1.5" />
+  <Class Name="SpaceShipsLab1.Crew.CrewFactory">
+    <Position X="2.75" Y="0.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAgIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Crew\CrewFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceShipsLab1.Crew.CruiserCrew" BaseTypeListCollapsed="true">
+    <Position X="9" Y="0.75" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Crew\CruiserCrew.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="SpaceShipsLab1.Crew.DestroyerCrew" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="8.5" Y="2.25" Width="1.5" />
+  <Class Name="SpaceShipsLab1.Crew.DestroyerCrew" BaseTypeListCollapsed="true">
+    <Position X="11.25" Y="0.75" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Crew\DestroyerCrew.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Interface Name="SpaceShipsLab1.Crew.ICrew" Collapsed="true">
-    <Position X="8.5" Y="3.5" Width="1.5" />
+  <Class Name="SpaceShipsLab1.ExtraAbility.ExtraAbilityFactory">
+    <Position X="2.75" Y="6" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAABAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExtraAbility\ExtraAbilityFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="SpaceShipsLab1.ExtraAbility.IExtraAbility">
+    <Position X="5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExtraAbility\IExtraAbility.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SpaceShipsLab1.Weapon.IWeapon">
+    <Position X="5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Weapon\IWeapon.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SpaceShipsLab1.StorageUnit.IStorageUnit">
+    <Position X="5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>StorageUnit\IStorageUnit.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SpaceShipsLab1.Crew.ICrew">
+    <Position X="5" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Crew\ICrew.cs</FileName>

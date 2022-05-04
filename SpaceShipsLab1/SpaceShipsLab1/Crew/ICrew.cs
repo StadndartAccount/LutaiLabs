@@ -2,6 +2,6 @@
 {
     interface ICrew
     {
-        void GetCrewMembers();
+        public void GetCrewMembers();
     }
 }
