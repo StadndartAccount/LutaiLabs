@@ -1,0 +1,13 @@
+C:\Users\Danila\source\repos\TrafficLightsLab3\TrafficLightsLab3\bin\Debug\netcoreapp3.1\TrafficLightsLab3.exe
+C:\Users\Danila\source\repos\TrafficLightsLab3\TrafficLightsLab3\bin\Debug\netcoreapp3.1\TrafficLightsLab3.deps.json
+C:\Users\Danila\source\repos\TrafficLightsLab3\TrafficLightsLab3\bin\Debug\netcoreapp3.1\TrafficLightsLab3.runtimeconfig.json
+C:\Users\Danila\source\repos\TrafficLightsLab3\TrafficLightsLab3\bin\Debug\netcoreapp3.1\TrafficLightsLab3.runtimeconfig.dev.json
+C:\Users\Danila\source\repos\TrafficLightsLab3\TrafficLightsLab3\bin\Debug\netcoreapp3.1\TrafficLightsLab3.dll
+C:\Users\Danila\source\repos\TrafficLightsLab3\TrafficLightsLab3\bin\Debug\netcoreapp3.1\TrafficLightsLab3.pdb
+C:\Users\Danila\source\repos\TrafficLightsLab3\TrafficLightsLab3\obj\Debug\netcoreapp3.1\TrafficLightsLab3.csprojAssemblyReference.cache
+C:\Users\Danila\source\repos\TrafficLightsLab3\TrafficLightsLab3\obj\Debug\netcoreapp3.1\TrafficLightsLab3.AssemblyInfoInputs.cache
+C:\Users\Danila\source\repos\TrafficLightsLab3\TrafficLightsLab3\obj\Debug\netcoreapp3.1\TrafficLightsLab3.AssemblyInfo.cs
+C:\Users\Danila\source\repos\TrafficLightsLab3\TrafficLightsLab3\obj\Debug\netcoreapp3.1\TrafficLightsLab3.csproj.CoreCompileInputs.cache
+C:\Users\Danila\source\repos\TrafficLightsLab3\TrafficLightsLab3\obj\Debug\netcoreapp3.1\TrafficLightsLab3.dll
+C:\Users\Danila\source\repos\TrafficLightsLab3\TrafficLightsLab3\obj\Debug\netcoreapp3.1\TrafficLightsLab3.pdb
+C:\Users\Danila\source\repos\TrafficLightsLab3\TrafficLightsLab3\obj\Debug\netcoreapp3.1\TrafficLightsLab3.genruntimeconfig.cache
