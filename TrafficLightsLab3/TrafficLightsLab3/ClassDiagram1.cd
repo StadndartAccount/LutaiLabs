@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TrafficLightsLab3.TrafficLightContext">
+    <Position X="6" Y="1" Width="1.5" />
+    <AssociationLine Name="state" Type="TrafficLightsLab3.TrafficLightState">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="3.1" Y="0.07" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAgAAEAAAAAAAAAAA=</HashCode>
+      <FileName>TrafficLightContext.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="state" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TrafficLightsLab3.TrafficLightState">
+    <Position X="11.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>TrafficLightState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrafficLightsLab3.GreenLight">
+    <Position X="13.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>GreenLight.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrafficLightsLab3.YellowLight">
+    <Position X="9" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>YellowLight.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrafficLightsLab3.RedLight">
+    <Position X="11.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>RedLight.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
