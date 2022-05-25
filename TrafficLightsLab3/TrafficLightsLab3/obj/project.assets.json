@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Danila\\source\\repos\\TrafficLightsLab3\\TrafficLightsLab3\\TrafficLightsLab3.csproj",
+      "projectUniqueName": "C:\\Users\\Danila\\Documents\\git\\LutaiLabs\\TrafficLightsLab3\\TrafficLightsLab3\\TrafficLightsLab3.csproj",
       "projectName": "TrafficLightsLab3",
-      "projectPath": "C:\\Users\\Danila\\source\\repos\\TrafficLightsLab3\\TrafficLightsLab3\\TrafficLightsLab3.csproj",
+      "projectPath": "C:\\Users\\Danila\\Documents\\git\\LutaiLabs\\TrafficLightsLab3\\TrafficLightsLab3\\TrafficLightsLab3.csproj",
       "packagesPath": "C:\\Users\\Danila\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Danila\\source\\repos\\TrafficLightsLab3\\TrafficLightsLab3\\obj\\",
+      "outputPath": "C:\\Users\\Danila\\Documents\\git\\LutaiLabs\\TrafficLightsLab3\\TrafficLightsLab3\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Danila\\AppData\\Roaming\\NuGet\\NuGet.Config",
