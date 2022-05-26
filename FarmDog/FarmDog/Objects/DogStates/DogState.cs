@@ -4,10 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FarmDog.classes.DogStates
+namespace FarmDog.Objects.DogStates
 {
-    interface DogState
+    public interface DogState
     {
-        void Handle();
+        void GrowUp(Dog dog);
+        void MorningActivity(Dog dog);
+        void DayActivity(Dog dog);
+        void EveningActivity(Dog dog);
     }
 }

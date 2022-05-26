@@ -1,6 +1,6 @@
 ﻿namespace FarmDog
 {
-    partial class Form1
+    partial class InitForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnAddDog = new System.Windows.Forms.Button();
             this.checkBoxHealth = new System.Windows.Forms.CheckBox();
-            this.checkBoxHunger = new System.Windows.Forms.CheckBox();
-            this.dogsList = new System.Windows.Forms.ListBox();
+            this.checkBoxFed = new System.Windows.Forms.CheckBox();
             this.textBoxName = new System.Windows.Forms.TextBox();
             this.trackBarAge = new System.Windows.Forms.TrackBar();
             this.btnSetDefaultList = new System.Windows.Forms.Button();
@@ -45,6 +45,9 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.dogsNumber = new System.Windows.Forms.Label();
+            this.btnRandomDog = new System.Windows.Forms.Button();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.dogsList = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarAge)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,33 +66,23 @@
             // 
             this.checkBoxHealth.AutoSize = true;
             this.checkBoxHealth.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(204)));
-            this.checkBoxHealth.Location = new System.Drawing.Point(181, 184);
+            this.checkBoxHealth.Location = new System.Drawing.Point(194, 184);
             this.checkBoxHealth.Name = "checkBoxHealth";
             this.checkBoxHealth.Size = new System.Drawing.Size(106, 21);
             this.checkBoxHealth.TabIndex = 1;
             this.checkBoxHealth.Text = "ЗДОРОВАЯ";
             this.checkBoxHealth.UseVisualStyleBackColor = true;
             // 
-            // checkBoxHunger
+            // checkBoxFed
             // 
-            this.checkBoxHunger.AutoSize = true;
-            this.checkBoxHunger.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(204)));
-            this.checkBoxHunger.Location = new System.Drawing.Point(44, 184);
-            this.checkBoxHunger.Name = "checkBoxHunger";
-            this.checkBoxHunger.Size = new System.Drawing.Size(107, 21);
-            this.checkBoxHunger.TabIndex = 2;
-            this.checkBoxHunger.Text = "ГОЛОДНАЯ";
-            this.checkBoxHunger.UseVisualStyleBackColor = true;
-            // 
-            // dogsList
-            // 
-            this.dogsList.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(204)));
-            this.dogsList.FormattingEnabled = true;
-            this.dogsList.ItemHeight = 17;
-            this.dogsList.Location = new System.Drawing.Point(357, 86);
-            this.dogsList.Name = "dogsList";
-            this.dogsList.Size = new System.Drawing.Size(416, 361);
-            this.dogsList.TabIndex = 3;
+            this.checkBoxFed.AutoSize = true;
+            this.checkBoxFed.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(204)));
+            this.checkBoxFed.Location = new System.Drawing.Point(44, 184);
+            this.checkBoxFed.Name = "checkBoxFed";
+            this.checkBoxFed.Size = new System.Drawing.Size(144, 21);
+            this.checkBoxFed.TabIndex = 2;
+            this.checkBoxFed.Text = "НАКОРМЛЕННАЯ";
+            this.checkBoxFed.UseVisualStyleBackColor = true;
             // 
             // textBoxName
             // 
@@ -112,7 +105,7 @@
             // btnSetDefaultList
             // 
             this.btnSetDefaultList.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(204)));
-            this.btnSetDefaultList.Location = new System.Drawing.Point(44, 290);
+            this.btnSetDefaultList.Location = new System.Drawing.Point(44, 369);
             this.btnSetDefaultList.Name = "btnSetDefaultList";
             this.btnSetDefaultList.Size = new System.Drawing.Size(243, 62);
             this.btnSetDefaultList.TabIndex = 6;
@@ -123,12 +116,13 @@
             // btnInit
             // 
             this.btnInit.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(204)));
-            this.btnInit.Location = new System.Drawing.Point(44, 417);
+            this.btnInit.Location = new System.Drawing.Point(44, 494);
             this.btnInit.Name = "btnInit";
             this.btnInit.Size = new System.Drawing.Size(243, 30);
             this.btnInit.TabIndex = 7;
             this.btnInit.Text = "ЗАПУСТИТЬ ПРОГРАММУ";
             this.btnInit.UseVisualStyleBackColor = true;
+            this.btnInit.Click += new System.EventHandler(this.btnInit_Click);
             // 
             // label1
             // 
@@ -220,11 +214,38 @@
             this.dogsNumber.TabIndex = 16;
             this.dogsNumber.Text = "0";
             // 
-            // Form1
+            // btnRandomDog
+            // 
+            this.btnRandomDog.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(204)));
+            this.btnRandomDog.Location = new System.Drawing.Point(44, 287);
+            this.btnRandomDog.Name = "btnRandomDog";
+            this.btnRandomDog.Size = new System.Drawing.Size(243, 30);
+            this.btnRandomDog.TabIndex = 17;
+            this.btnRandomDog.Text = "СЛУЧАЙНАЯ СОБАКА";
+            this.btnRandomDog.UseVisualStyleBackColor = true;
+            this.btnRandomDog.Click += new System.EventHandler(this.btnRandomDog_Click);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // dogsList
+            // 
+            this.dogsList.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(204)));
+            this.dogsList.FormattingEnabled = true;
+            this.dogsList.ItemHeight = 20;
+            this.dogsList.Location = new System.Drawing.Point(357, 86);
+            this.dogsList.Name = "dogsList";
+            this.dogsList.Size = new System.Drawing.Size(575, 344);
+            this.dogsList.TabIndex = 3;
+            // 
+            // InitForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(804, 566);
+            this.ClientSize = new System.Drawing.Size(981, 566);
+            this.Controls.Add(this.btnRandomDog);
             this.Controls.Add(this.dogsNumber);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -239,11 +260,11 @@
             this.Controls.Add(this.trackBarAge);
             this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.dogsList);
-            this.Controls.Add(this.checkBoxHunger);
+            this.Controls.Add(this.checkBoxFed);
             this.Controls.Add(this.checkBoxHealth);
             this.Controls.Add(this.btnAddDog);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "InitForm";
+            this.Text = "InitForm";
             ((System.ComponentModel.ISupportInitialize)(this.trackBarAge)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -254,8 +275,7 @@
 
         private System.Windows.Forms.Button btnAddDog;
         private System.Windows.Forms.CheckBox checkBoxHealth;
-        private System.Windows.Forms.CheckBox checkBoxHunger;
-        private System.Windows.Forms.ListBox dogsList;
+        private System.Windows.Forms.CheckBox checkBoxFed;
         private System.Windows.Forms.TextBox textBoxName;
         private System.Windows.Forms.TrackBar trackBarAge;
         private System.Windows.Forms.Button btnSetDefaultList;
@@ -269,6 +289,9 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label dogsNumber;
+        private System.Windows.Forms.Button btnRandomDog;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ListBox dogsList;
     }
 }
 

@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using FarmDog.classes.DogStates;
+using FarmDog.Objects.DogStates;
 
-namespace FarmDog.classes
+namespace FarmDog.Objects
 {
-    class Dog
+    public class Dog
     {
-        const int MAX_YOUNG_AGE = 2;
-        const int MAX_ADULT_AGE = 8;
-        const int MAX_OLD_AGE = 13;
+        public const int MAX_YOUNG_AGE = 2;
+        public const int MAX_ADULT_AGE = 8;
+        public const int MAX_OLD_AGE = 13;
 
         public Dog(string name, int age, bool isHungry, bool isHealthy) {
             Name = name;
@@ -27,23 +27,61 @@ namespace FarmDog.classes
                 State = new AdultDog();
                 IsTrained = true;
             } 
-            else if (Age <= MAX_OLD_AGE)
+            else
             {
                 State = new OldDog();
                 IsTrained = true;
             }
 
             IsHealthy = isHealthy;
-            IsHungry = isHungry;
+            IsFed = isHungry;
         }
 
-        public DogState State { get; } = new YoungDog();
+        public DogState State { get; private set; } = new YoungDog();
         
         public string Name { get; }
-        public int Age { get; } = 0;
+        public int Age { get; private set; } = 0;
 
-        public bool IsHealthy { get; } = true;
-        public bool IsHungry { get; } = true;
-        public bool IsTrained { get; } = false;
+        public bool IsHealthy { get; private set; } = true;
+        public bool IsFed { get; private set; } = true;
+        public bool IsTrained { get; set; } = false;
+
+        public void GetCured()
+        {
+            IsHealthy = true;
+        }
+
+        public void BecomeIll()
+        {
+            IsHealthy = false;
+        }
+
+        public void EatFood()
+        {
+            IsFed = true;
+        }
+
+        public void BecomeHungry()
+        {
+            IsFed = false;
+        }
+
+        public void GrowUp()
+        {
+            Age++;
+            State.GrowUp(this);
+        }
+
+        public void ChangeState(DogState state)
+        {
+            State = state;
+        }
+
+        public override string ToString() {
+            return $"{Name} Возраст: {Age, -2} | Накормлен {(IsFed ? "+" : "-")} |" +
+            $" Здоров {(IsHealthy ? "+" : "-")} |" +
+            $" Дрессирован {(IsTrained ? "+" : "-")} |";
+        }
+
     }
 }

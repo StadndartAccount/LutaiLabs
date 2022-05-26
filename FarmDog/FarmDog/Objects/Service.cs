@@ -6,8 +6,23 @@ using System.Threading.Tasks;
 
 namespace FarmDog.Objects
 {
-    class Service
+    public class Service
     {
-        public String Name { get; }
+        private static Service _instance = null;
+
+        public string Name { get; private set; } = "Никита";
+        private Service() { }
+
+        public static Service getInstance()
+        {
+            if (_instance == null)
+                _instance = new Service();
+            return _instance;
+        }
+
+        public void ClearCage(Dog dog)
+        {
+            ConsoleOutput.getInstance().SendMessage($"Работник {Name} помыл вольер {dog.Name}");
+        }
     }
 }

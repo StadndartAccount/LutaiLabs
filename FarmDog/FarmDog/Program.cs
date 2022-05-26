@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using FarmDog.classes;
-using FarmDog.classes.DogStates;
 
 namespace FarmDog
 {
@@ -18,7 +16,7 @@ namespace FarmDog
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new InitForm());
         }
     }
 }
