@@ -1,0 +1,10 @@
+C:\Users\Danila\Documents\git\LutaiLabs\FarmDog\FarmDog\obj\Debug\FarmDog.csprojAssemblyReference.cache
+C:\Users\Danila\Documents\git\LutaiLabs\FarmDog\FarmDog\obj\Debug\FarmDog.Form1.resources
+C:\Users\Danila\Documents\git\LutaiLabs\FarmDog\FarmDog\obj\Debug\FarmDog.Properties.Resources.resources
+C:\Users\Danila\Documents\git\LutaiLabs\FarmDog\FarmDog\obj\Debug\FarmDog.csproj.GenerateResource.cache
+C:\Users\Danila\Documents\git\LutaiLabs\FarmDog\FarmDog\obj\Debug\FarmDog.csproj.CoreCompileInputs.cache
+C:\Users\Danila\Documents\git\LutaiLabs\FarmDog\FarmDog\bin\Debug\FarmDog.exe.config
+C:\Users\Danila\Documents\git\LutaiLabs\FarmDog\FarmDog\bin\Debug\FarmDog.exe
+C:\Users\Danila\Documents\git\LutaiLabs\FarmDog\FarmDog\bin\Debug\FarmDog.pdb
+C:\Users\Danila\Documents\git\LutaiLabs\FarmDog\FarmDog\obj\Debug\FarmDog.exe
+C:\Users\Danila\Documents\git\LutaiLabs\FarmDog\FarmDog\obj\Debug\FarmDog.pdb
