@@ -10,10 +10,8 @@ namespace FarmDog.Objects.Day
     {
         public void Handle(DayContext context, List<Dog> dogs)
         {
-            dogs.ForEach((dog) =>
-            {
-                Service.getInstance().ClearCage(dog);
-            });
+            context.NotifyObservers(context.State);
+            ConsoleOutput.getInstance().SendMessage($"=Уборка вольеров=");
             context.ChangeState(new WorkingTime());
         }
     }

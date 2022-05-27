@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using FarmDog.Objects.Day;
 using FarmDog.Objects.DogStates;
 
 namespace FarmDog.Objects
 {
-    public class Dog
+    public class Dog : Observer
     {
         public const int MAX_YOUNG_AGE = 2;
         public const int MAX_ADULT_AGE = 8;
@@ -46,6 +47,8 @@ namespace FarmDog.Objects
         public bool IsFed { get; private set; } = true;
         public bool IsTrained { get; set; } = false;
 
+
+
         public void GetCured()
         {
             IsHealthy = true;
@@ -54,6 +57,11 @@ namespace FarmDog.Objects
         public void BecomeIll()
         {
             IsHealthy = false;
+        }
+
+        public void BecomeTrained()
+        {
+            IsTrained = true;
         }
 
         public void EatFood()
@@ -77,11 +85,28 @@ namespace FarmDog.Objects
             State = state;
         }
 
+        public void handleEvent(DayState dayState)
+        {
+            if(dayState is Morning)
+            {
+                State.MorningActivity(this);
+            }
+
+            if (dayState is WorkingTime)
+            {
+                State.DayActivity(this);
+            }
+
+            if (dayState is Evening)
+            {
+                State.EveningActivity(this);
+            }
+        }
+
         public override string ToString() {
             return $"{Name} Возраст: {Age, -2} | Накормлен {(IsFed ? "+" : "-")} |" +
             $" Здоров {(IsHealthy ? "+" : "-")} |" +
             $" Дрессирован {(IsTrained ? "+" : "-")} |";
         }
-
     }
 }

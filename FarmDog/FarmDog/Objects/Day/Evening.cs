@@ -10,12 +10,8 @@ namespace FarmDog.Objects.Day
     {
         public void Handle(DayContext context, List<Dog> dogs)
         {
-            dogs.ForEach((dog) =>
-            {
-                dog.State.EveningActivity(dog);
-                dog.GrowUp();
-            });
-
+            context.NotifyObservers(context.State);
+            ConsoleOutput.getInstance().SendMessage($"=Конец дня=");
             context.ChangeState(new Morning());
         }
     }

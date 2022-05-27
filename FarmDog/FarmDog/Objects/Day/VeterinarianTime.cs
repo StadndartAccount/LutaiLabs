@@ -10,10 +10,8 @@ namespace FarmDog.Objects.Day
     {
         public void Handle(DayContext context, List<Dog> dogs)
         {
-            dogs.ForEach((dog) =>
-            {
-                Veterinarian.getInstance().CheckDogHealth(dog);
-            });
+            context.NotifyObservers(context.State);
+            ConsoleOutput.getInstance().SendMessage($"=Осмотр у ветеринара=");
             context.ChangeState(new CleaningTime());
         }
     }

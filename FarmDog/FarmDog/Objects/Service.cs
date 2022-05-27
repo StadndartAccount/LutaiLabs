@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FarmDog.Objects.Day;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,23 +7,28 @@ using System.Threading.Tasks;
 
 namespace FarmDog.Objects
 {
-    public class Service
+    public class Service : Observer
     {
-        private static Service _instance = null;
-
-        public string Name { get; private set; } = "Никита";
-        private Service() { }
-
-        public static Service getInstance()
+        public string Name { get; private set; }
+        public Service(string name)
         {
-            if (_instance == null)
-                _instance = new Service();
-            return _instance;
+            Name = name;
         }
 
-        public void ClearCage(Dog dog)
+        public void ClearDogsCages(List<Dog> dogs)
         {
-            ConsoleOutput.getInstance().SendMessage($"Работник {Name} помыл вольер {dog.Name}");
+            foreach(Dog dog in dogs)
+            {
+                ConsoleOutput.getInstance().SendMessage($"Работник {Name} помыл вольер {dog.Name}");
+            }
+        }
+
+        public void handleEvent(DayState dayState)
+        {
+            if(dayState is CleaningTime)
+            {
+                ClearDogsCages(MainForm.dogsToShow);
+            }
         }
     }
 }

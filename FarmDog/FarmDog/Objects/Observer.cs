@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using FarmDog.Objects.Day;
 
-namespace FarmDog.Objects.Day
+namespace FarmDog.Objects
 {
-    public interface DayState
+    public interface Observer
     {
-        void Handle(DayContext context, List<Dog> dogs);
+        void handleEvent(DayState dayState);
     }
 }

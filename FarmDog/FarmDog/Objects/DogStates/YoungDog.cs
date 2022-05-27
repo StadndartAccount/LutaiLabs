@@ -34,6 +34,7 @@ namespace FarmDog.Objects.DogStates
             if (dog.Age <= Dog.MAX_YOUNG_AGE) return;
 
             ConsoleOutput.getInstance().SendMessage($"{dog.Name} вырос до взрослого пса");
+            dog.BecomeTrained();
             dog.ChangeState(new AdultDog());
         }
     }

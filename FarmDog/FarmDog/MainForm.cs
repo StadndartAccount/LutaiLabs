@@ -9,9 +9,12 @@ namespace FarmDog
 {
     public partial class MainForm : Form
     {
-        List<Dog> dogsToShow;
-        DayContext dayContext = new DayContext();
+        public static List<Dog> dogsToShow;
+        public static DayContext dayContext = new DayContext();
         bool isAutoUpdate = false;
+
+        Service service = new Service("Никита");
+        Veterinarian veterinarian = new Veterinarian("Миша");
 
         public MainForm(List<Dog> dogs)
         {
@@ -19,13 +22,21 @@ namespace FarmDog
 
             ConsoleOutput.SetOutputListBox(consoleLogs);
 
-            labelService.Text = $"Обычный сотрудник: {Service.getInstance().Name}";
-            labelVeterinarian.Text = $"Ветеринар: {Veterinarian.getInstance().Name}";
+            labelService.Text = $"Обычный сотрудник: {service.Name}";
+            labelVeterinarian.Text = $"Ветеринар: {veterinarian.Name}";
 
             label6.Text = $"Авто: {(isAutoUpdate ? "да" : "нет")}";
 
             dogsToShow = dogs;
             dogsList.DataSource = new BindingSource(dogsToShow, null);
+
+            dayContext.AddObserver(service);
+            dayContext.AddObserver(veterinarian);
+
+            foreach(Dog dog in dogsToShow)
+            {
+                dayContext.AddObserver(dog);
+            }
         }
 
         private void btnNextDayState_Click(object sender, EventArgs e)

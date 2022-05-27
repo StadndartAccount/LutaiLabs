@@ -58,6 +58,7 @@
     <Compile Include="Objects\Day\DayState.cs" />
     <Compile Include="Objects\Day\Evening.cs" />
     <Compile Include="Objects\Day\Morning.cs" />
+    <Compile Include="Objects\Day\Observed.cs" />
     <Compile Include="Objects\Day\VeterinarianTime.cs" />
     <Compile Include="Objects\Day\WorkingTime.cs" />
     <Compile Include="Objects\Dog.cs" />
@@ -71,6 +72,7 @@
     <Compile Include="InitForm.Designer.cs">
       <DependentUpon>InitForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Objects\Observer.cs" />
     <Compile Include="Objects\Service.cs" />
     <Compile Include="Objects\Veterinarian.cs" />
     <Compile Include="Program.cs" />
