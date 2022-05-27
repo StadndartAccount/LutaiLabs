@@ -44,6 +44,8 @@
             this.labelVeterinarian = new System.Windows.Forms.Label();
             this.labelService = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarDayState)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -89,10 +91,11 @@
             // 
             // btnNextDayState
             // 
+            this.btnNextDayState.Enabled = false;
             this.btnNextDayState.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(204)));
             this.btnNextDayState.Location = new System.Drawing.Point(974, 12);
             this.btnNextDayState.Name = "btnNextDayState";
-            this.btnNextDayState.Size = new System.Drawing.Size(213, 45);
+            this.btnNextDayState.Size = new System.Drawing.Size(213, 56);
             this.btnNextDayState.TabIndex = 4;
             this.btnNextDayState.Text = " Следующий момент";
             this.btnNextDayState.UseVisualStyleBackColor = true;
@@ -201,11 +204,35 @@
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
             // 
+            // button1
+            // 
+            this.button1.Enabled = false;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(204)));
+            this.button1.Location = new System.Drawing.Point(1223, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(109, 33);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "АВТО";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(204)));
+            this.label6.Location = new System.Drawing.Point(1219, 48);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(53, 22);
+            this.label6.TabIndex = 16;
+            this.label6.Text = "авто:";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1407, 515);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.labelService);
             this.Controls.Add(this.labelVeterinarian);
@@ -247,5 +274,7 @@
         private System.Windows.Forms.Label labelVeterinarian;
         private System.Windows.Forms.Label labelService;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label6;
     }
 }

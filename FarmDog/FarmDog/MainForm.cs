@@ -11,6 +11,7 @@ namespace FarmDog
     {
         List<Dog> dogsToShow;
         DayContext dayContext = new DayContext();
+        bool isAutoUpdate = false;
 
         public MainForm(List<Dog> dogs)
         {
@@ -21,7 +22,8 @@ namespace FarmDog
             labelService.Text = $"Обычный сотрудник: {Service.getInstance().Name}";
             labelVeterinarian.Text = $"Ветеринар: {Veterinarian.getInstance().Name}";
 
-            btnNextDayState.Enabled = false;
+            label6.Text = $"Авто: {(isAutoUpdate ? "да" : "нет")}";
+
             dogsToShow = dogs;
             dogsList.DataSource = new BindingSource(dogsToShow, null);
         }
@@ -36,7 +38,7 @@ namespace FarmDog
             {
                 trackBarDayState.Value++;
             }
-            // утро -> проверка у ветеринара -> уборка вольеров -> день -> вечер
+            // утро -> проверка у ветеринара -> уборка вольеров -> день -> вечер -> утро
             dayContext.Request(dogsToShow);
 
             dogsList.DataSource = new BindingSource(dogsToShow, null);
@@ -45,16 +47,35 @@ namespace FarmDog
         private void btnStart_Click(object sender, EventArgs e)
         {
             btnNextDayState.Enabled = true;
+            button1.Enabled = true;
+            System.Threading.Tasks.Task.Run(() =>
+            {
+                while (true)
+                {
+                    if (isAutoUpdate)
+                    {
+                        Invoke(new Action(() => { btnNextDayState.PerformClick(); }));
+                        System.Threading.Thread.Sleep(2000);
+                    }
+                }
+            });
         }
 
         private void btnStop_Click(object sender, EventArgs e)
         {
             btnNextDayState.Enabled = false;
+            this.Close();
         }
 
         private void btnClearConsole_Click(object sender, EventArgs e)
         {
             consoleLogs.Items.Clear();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            isAutoUpdate = !isAutoUpdate;
+            label6.Text = $"Авто: {(isAutoUpdate ? "да" : "нет")}";
         }
     }
 }

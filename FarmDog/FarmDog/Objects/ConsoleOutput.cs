@@ -27,7 +27,7 @@ namespace FarmDog.Objects
                 Console.WriteLine($"Error: message \"{message}\" wasn't sent");
                 return;
             }
-            _listBox.Items.Add(message);
+            _listBox.Items.Insert(0, message);
         }
 
         static public void SetOutputListBox(ListBox listBox)
