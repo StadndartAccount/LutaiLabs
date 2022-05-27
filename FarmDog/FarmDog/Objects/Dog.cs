@@ -47,8 +47,6 @@ namespace FarmDog.Objects
         public bool IsFed { get; private set; } = true;
         public bool IsTrained { get; set; } = false;
 
-
-
         public void GetCured()
         {
             IsHealthy = true;
@@ -77,7 +75,6 @@ namespace FarmDog.Objects
         public void GrowUp()
         {
             Age++;
-            State.GrowUp(this);
         }
 
         public void ChangeState(DogState state)
@@ -100,6 +97,7 @@ namespace FarmDog.Objects
             if (dayState is Evening)
             {
                 State.EveningActivity(this);
+                State.GrowUp(this);
             }
         }
 

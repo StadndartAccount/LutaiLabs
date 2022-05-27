@@ -34,9 +34,11 @@ namespace FarmDog.Objects.DogStates
 
         public void GrowUp(Dog dog)
         {
-            if (dog.Age <= Dog.MAX_ADULT_AGE) return;
+            dog.GrowUp();
 
-            ConsoleOutput.getInstance().SendMessage($"{dog.Name} вырос до старого пса");
+            if (dog.Age <= Dog.MAX_ADULT_AGE) return;
+            
+            ConsoleOutput.getInstance().SendMessage($" -> {dog.Name} вырос до старого пса");
             dog.ChangeState(new OldDog());
         }
     }

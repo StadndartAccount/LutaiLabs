@@ -32,7 +32,7 @@ namespace FarmDog.Objects.DogStates
 
         public void GrowUp(Dog dog)
         {
-            // 
+            dog.GrowUp();
         }
     }
 }
