@@ -20,6 +20,7 @@ namespace FarmDog.Objects
             foreach(Dog dog in dogs)
             {
                 ConsoleOutput.getInstance().SendMessage($"Работник {Name} помыл вольер {dog.Name}");
+                dog.IsClearedCage = true;
             }
         }
 

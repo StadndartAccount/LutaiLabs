@@ -46,6 +46,7 @@ namespace FarmDog.Objects
         public bool IsHealthy { get; private set; } = true;
         public bool IsFed { get; private set; } = true;
         public bool IsTrained { get; set; } = false;
+        public bool IsClearedCage { get; set; } = true;
 
         public void GetCured()
         {
